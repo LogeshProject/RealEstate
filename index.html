@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy09SzlAEVUCweVgzbLIPLfQL8uwEJN-2nMw&usqp=CAU">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .top{
+            background-image: url(https://w.forfun.com/fetch/e0/e018f3a8586b30bcbdc600355a367d2a.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 180%;
+            background-attachment: scroll;
+            
+        }
+        .header{
+            border: 2px solid black;
+            width: 101%;
+            height: 45px;
+            margin-top: -8px;
+            margin-left: -8px;
+            background-color: black;
+        }
+        .logo{
+            border: 2px solid black;
+            width: 5%;
+            height: 45px;
+            margin-top: -2px;
+            margin-left: -2px;
+        }
+        .logo:hover{
+            border: 3px solid white;
+            height: 43px;
+    
+        }
+        .menu{
+            border: 3px solid black;
+            width: 55%;
+            height: 45px;
+            margin-left: 80px;
+            margin-top: -50px;
+        }
+        ul li{
+            display: inline;
+            color: white;
+            margin: 1%;
+        }
+        #data{
+            border: 2px solid rgb(88,191,147);
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .dropdown .dropbtn{
+            border: none;
+            color: white;
+            background-color: inherit;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            margin-top: 4px;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .move{
+            margin-left: 1100px;
+            margin-top: -57px;
+            border: 2px solid black;
+
+        }
+        .title{
+            margin-left: 35%;
+            margin-top: 3%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .backside{
+            border: 2px solid white;
+            border-radius: 10px;
+            height: 110px;
+            width: 1140px;
+            margin-top: 120px;
+            margin-left: 200px;
+            
+        }
+        .backside:hover{
+            opacity: 0.7;
+        }
+        
+       .upper{
+            
+            height: 40px;
+            width: 900px;
+            margin-left: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+       }
+       .find{
+            border: 1px solid black;
+            height: 40px;
+            width: 140px;
+            margin-left: 84%;
+            margin-top: -3.45%;
+            background-color: aqua;
+       }
+       .middle{
+            border: 2px solid white;
+            height: 80px;
+            width: 700px;
+            margin-left: 400px;
+            background-color: white;
+            margin-bottom: -120px;
+            padding-top: 18px;
+       }
+       a{
+            text-decoration: none;
+       }
+       .middle ul li{
+            border: 2px solid white;
+            display: inline;
+            color: black;
+            padding: 7px;
+            margin: 8px;
+        
+       }
+       .middle ul li:hover{
+            border: 2px solid green;
+            color: green;
+       }
+       .space{
+            
+            height: 230px;
+            width: 10%;
+       }
+       .card{
+            border: 2px solid white;
+            width: 100%;
+            height: 490px;
+            
+       }
+       .divi{
+            border: 2px solid white;
+            padding: 40px;
+            margin-left: 140px;
+            margin: 10px;
+            height: 50%;
+       }
+       .card1{
+            border: 2px solid red;
+            padding-bottom: 267px;
+            padding-left:246.8px ;
+            padding-top: 40px;
+            margin: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color: rgb(255,237,186);
+            background-image: url(graph-removebg-preview\ \(1\).png);
+            background-repeat: no-repeat;
+
+       }
+       .card2{
+            border: 2px solid red;
+            padding-bottom: 267px;
+            padding-left:248px ;
+            padding-top: 40px;
+            margin: 10px;
+            background-color: rgb(197,244,229);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-image: url(map-removebg-preview.png);
+            background-repeat: no-repeat;
+           
+       }
+    
+       .card3{
+            border: 2px solid red;
+            padding-bottom: 267px;
+            padding-left:256px ;
+            padding-top: 40px;
+            margin: 10px;
+            background-color:rgb(255,237,195);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-image: url(Ilogo-removebg-preview.png);
+            background-repeat: no-repeat;
+            
+       }
+       .card4{
+        border: 2px solid red;
+            padding-bottom: 267px;
+            padding-left:250.5px ;
+            padding-top: 40px;
+            margin: 10px;
+            background-color: rgb(255,219,206);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-image: url(qmark-removebg-preview.png);
+            background-repeat: no-repeat;
+            
+       }
+       .card5{
+            border: 2px solid red;
+            padding-bottom: 267px;
+            padding-left:245px ;
+            padding-top: 40px;
+            margin: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-color:rgb(223,242,205);
+            background-image: url(buliding-removebg-preview.png);
+            background-repeat: no-repeat;
+           
+       }
+       .down1{
+            border: 2px solid red;
+            width: 247px;
+            height: 40px;
+            margin-left: 61.5px;
+            margin-top: -17px;
+            border-radius: 10px;
+            background-color: rgb(255,222,129);
+       }
+       .down2{
+            border: 2px solid red;
+            width: 248px;
+            height: 40px;
+            margin-left: 332px;
+            margin-top: -44px;
+            border-radius: 10px;
+            background-color: rgb(166,242,217);
+       }
+       .down3{
+            border: 2px solid red;
+            width: 256px;
+            height: 40px;
+            margin-left: 603px;
+            margin-top: -44px;
+            border-radius: 10px;
+            background-color: rgb(255,230,173);
+       }
+       .down4{
+            border: 2px solid red;
+            width: 251px;
+            height: 40px;
+            margin-left: 882px;
+            margin-top: -44px;
+            border-radius: 10px;
+            background-color: rgb(255,202,183);
+       }
+       .down5{
+            border: 2px solid red;
+            width: 245px;
+            height: 40px;
+            margin-left: 1156px;
+            margin-top: -44px;
+            border-radius: 10px;
+            background-color: rgb(204,240,169);
+       }
+       #t1{
+            margin-top: -200px;
+            margin-left: 8px;
+       }
+       #t2{
+            margin-top: -200px;
+            margin-left: 8px;
+       }
+       #t3{
+            margin-top: -200px;
+            margin-left: 8px;
+       }
+       #t4{
+            margin-top: -200px;
+            margin-left: 8px;
+       }
+       #t5{
+            margin-top: -200px;
+            margin-left: 8px;
+       }
+
+       .needs{
+            border: 2px solid white;
+            width: 1500px;
+            height: 600px;
+       }
+       
+       .s1{
+            padding-bottom: 160px;
+            padding-left:356px ;
+            padding-top: 40px;
+            margin: 5%;
+            border-radius: 10px;
+            box-shadow: 10px 10px rgb(177,177,177);
+       }
+       .s2{
+            padding-bottom: 160px;
+            padding-left:356px ;
+            padding-top: 40px;
+            margin: 5%;
+            border-radius: 10px;
+            box-shadow: 10px 10px rgb(177,177,177);
+       }
+       .s3{
+            padding-bottom: 160px;
+            padding-left:356px ;
+            padding-top: 40px;
+            margin: 5%;
+            border-radius: 10px;
+            box-shadow: 10px 10px rgb(177,177,177);
+       }
+       .d1{
+            margin-left: 90px;
+            margin-top: -75px;
+            
+       }
+       .d2{
+            margin-left: 600px;
+            margin-top: -210px;
+       }
+       .d3{
+            margin-left: 1120px;
+            margin-top: -235px;
+       }
+       .button {
+            border: 1px solid green;
+            padding: 13px;
+            border-radius: 10px;
+            background-color: white;
+            color: green;
+        }
+        .button:hover{
+            background-color: green;
+            color: white;
+        }
+        #explore1{
+            color: rgb(145,108,0);
+        }
+        #explore2{
+            color: rgb(0,129,87);
+        }
+        #explore3{
+            color:rgb(157,109,0) ;
+        }
+        #explore4{
+            color: green;
+        }
+        #explore5{
+            color:rgb(132,35,0) ;
+        }
+        #explore1:hover{
+            color: black;
+        }
+        #explore2:hover{
+            color: black;
+        }
+        #explore3:hover{
+            color: black;
+        }
+        #explore4:hover{
+            color: black;
+        }
+        #explore5:hover{
+            color: black;
+        }
+        .about{
+            border: 2px solid black;
+            height: 400px;
+            width: 1500px;
+            background-image: url(https://wallpaperaccess.com/full/38123.jpg);
+            background-size: 100% 100%;
+            color: white;
+        }
+        #dp2{
+            margin-left: 65px;
+        }
+        #dp3 a{
+            float: left;
+        }
+        #dp4{
+            margin-left: 220px;
+        }
+        #dp5{
+            margin-left: 310px;
+        }
+        #dp6{
+            margin-left: 400px;
+        }
+        #dp7{
+            margin-left: 490px;
+        }
+        #heart:hover{
+            color: red;
+        }
+
+        
+
+       
+    </style>
+</head>
+<body>
+    <div class="top">
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="https://t3.ftcdn.net/jpg/03/65/42/00/360_F_365420014_xjsSDkKzrhq4gr9GFzP6S97H7MJyNI5B.jpg" alt="logo-img"  width="75" height="40"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li  class="dropdown">City <button class="dropbtn"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+
+                    <div class="dropdown-content" id="dp1">
+                        <a href=""><b>TOP CITIES</b></a>
+                        <a href="https://www.google.com/search?q=chennai&rlz=1C1VDKB_enIN1011IN1011&oq=
+                        chennai&aqs=chrome.0.0i271j46i433i512j46i131i199i433i465i512j0i433i512j0i433i650j46i131i199i433i465i512j0i512j69i60.
+                        2690j0j7&sourceid=chrome&ie=UTF-8">Chennai</a>
+                        <a href="https://www.google.com/search?q=trichy&sca_esv=563303096&rlz=1C1VDKB_enIN1011IN1011&ei=5l_5ZKuFHtPhseMPmNGIsAs&ved=
+                        0ahUKEwirkMu84peBAxXTcGwGHZgoArYQ4dUDCBA&uact=5&oq=trichy&gs_lp
+                        =Egxnd3Mtd2l6LXNlcnAiBnRyaWNoeTIKEC4YsQMYigUYQzIKEAAYigUYsQMYQzIHEAAYigUYQzIHEAAYigUYQzIHEAAYigUYQzIHEAAYigUYQzIFEAAYgAQyChAAGIoFGLEDGEMyCBAAGIAEGLEDMggQABiABBixAzIZEC4YsQMYigUYQxiXBRjcBBjeBBjgBNgBA0j4KFDnAl
+                        jlHXACeAGQAQCYAaABoAHECqoBAzUuN7gBA8gBAPgBAagCFMICChAAGEcY1gQYsAPCAgoQABiKBRiwAxhDwgIOEAAY5AIY1gQYsAPYAQHCAhAQLhiKBRjIAxiwAxhD2AECwgIWEC4YigUYxwEYrwEYyAMYsAMYQ9gBAsICChAuGIoFGLEDGEPCAhAQLhiKBRixAxjHARivAR
+                        hDwgIREC4YgAQYsQMYgwEYxwEY0QPCAhkQLhiKBRixAxhDGJcFGNwEGN4EGOAE2AEDwgINEC4YigUYxwEYrwEYQ8ICBxAuGIoFGEPCAgsQABiABBixAxiDAcICFhAuGIoFGEMYlwUY3AQY3gQY4ATYAQPCAhAQLhiKBRjqAhi0AhhD2AEEwgIQEAAYigUY6gIYtAIYQ9gBBMICFhAAGAMYj
+                        wEY5QIY6gIYtAIYjAPYAQXCAhYQLhgDGI8BGOUCGOoCGLQCGIwD2AEFwgILEC4YgAQYxwEY0QPCAg0QABiKBRixAxiDARhDwgINEC4YigUYxwEY0QMYQ8ICFhAuGIoFGMcBGK8BGJgFGJ4FGJkFGEPCAg0QLhiKBRixAxiDARhDwgIIEAAYigUYsQPCAiUQLhiKBRjHARivARiYBRieBRiZB
+                        RhDGJcFGNwEGN4EGOAE2AED4gMEGAAgQYgGAZAGE7oGBggBEAEYCboGBggCEAEYCLoGBggDEAEYFLoGBAgEGAe6BgYIBRABGAo&sclient=gws-wiz-serp">Tiruchirappalli</a>
+                        <a href="https://www.google.com/search?q=madurai&sca_esv=563303096&rlz=1C1VDKB_enIN1011IN1011&ei=A2D5ZPbyG8WgseMP-8eJ-As&gs_ssp=
+                        eJzj4tTP1TcwtExLKjBg9GLPTUwpLUrMBAA6mwYW&oq=mad&gs_lp=Egxnd3Mtd2l6LXNlcnAiA21hZCoCCAAyDRAuGIoFGLEDGIMBGEMyBxAAGIoFGEMyCxAAGIAEGLEDGIMBMgcQABiKBRhDMgcQABiKBRhDMgcQABiKBRhDM
+                        gcQABiKBRhDMgcQABiKBRhDMgcQABiKBRhDMgsQLhiABBixAxiDATIcEC4YigUYsQMYgwEYQxiXBRjcBBjeBBjgBNgBA0ihL1CrAljEGXACeAGQAQCYAeUBoAHhCaoBBTIuNC4yuAEDyAEA-AEBqAIUwgIKEAAYRxjWBBiwA8ICC
+                        hAAGIoFGLADGEPCAg4QABjkAhjWBBiwA9gBAcICEBAuGIoFGMgDGLADGEPYAQLCAgcQLhiKBRhDwgIFEAAYgATCAhYQLhiKBRhDGJcFGNwEGN4EGOAE2AEDwgIQEC4YigUY6gIYtAIYQ9gBBMICEBAAGIoFGOoCGLQCGEPYAQTCAhYQ
+                        ABgDGI8BGOUCGOoCGLQCGIwD2AEFwgIWEC4YAxiPARjlAhjqAhi0AhiMA9gBBcICDRAAGIoFGLEDGIMBGArCAg0QABiKBRixAxiDARhDwgITEC4YigUYsQMYgwEYxwEY0QMYQ8ICCxAuGIoFGLEDGIMBwgIFEC4YgATiAwQYACBBiAYBkAYTug
+                        YGCAEQARgJugYGCAIQARgIugYGCAMQARgUugYECAQYB7oGBggFEAEYCg&sclient=gws-wiz-serp">Madurai</a>
+                      </div>
+                
+                </li>
+                <li class="dropdown">Buy <button class="dropbtn"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+
+                    <div class="dropdown-content" id="dp2">
+                        <a href=""><b>NO.Of.ROOMS</b></a>
+                        <a href="">1 BHK Flats for Sale</a>
+                        <a href="">2 BHK Flats for Sale</a>
+                        <a href="">3 BHK Flats for Sale</a>
+                        <a href="">4 BHK Flats for Sale</a>
+                    </div>
+                </li>
+                <li class="dropdown">Rent <button class="dropbtn"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                    <div class="dropdown-content" id="dp3">
+                        <a href="#"><b>Popular Searches</b></a>
+                        <a href="#">Property for Rent</a>
+                        <a href="#">Gated Community for Rent</a>
+                        <a href="#">Furnished Properties for Rent</a>
+                        <a href="#">No Brokerage Properties for Rent</a>
+                        <br>
+                        <a href="#"><b>Residential Properties</b></a>
+                        <a href="#">Flats for Rent</a>
+                        <a href="#">PG for Rent</a>
+                        <a href="#">Independent House for Rent</a>
+                        <a href="#">Villa for Rent</a>
+                        <a href="#">Builder Floor for Rent</a>
+                        <br>
+                        <a href="#"><b>Commercial Properties</b></a>
+                        <a href="#">Office Space for Rent</a>
+                        <a href="#">Shop for Rent</a>
+                        <a href="#">Warehouse for Rent</a>
+                        <a href="#">Industrial Plot for Rent</a>
+                    </div>
+                    
+                </li>
+                <li class="dropdown">Project <button class="dropbtn"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                    <div class="dropdown-content" id="dp4">
+                        <a href=""><b>New Projects</b></a>
+                        <a href="">New Launch Projects</a>
+                        <a href="">Under Construction Projects</a>
+                        <a href="">Ready To Move Projects</a>
+                    </div>
+                </li>
+                <li class="dropdown">Agents <button class="dropbtn"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                    <div class="dropdown-content" id="dp5">
+                        <a href="">Sales Agents</a>
+                        <a href="">Service Agents </a>
+                        <a href="">Rent Agents</a>
+                        <a href="">Secert Agents</a>
+                        <a href="">Property agents</a>
+                    </div>
+                </li>
+                <li class="dropdown">Services <button class="dropbtn"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                    <div class="dropdown-content" id="dp6">
+                        <a href=""><b>For Buyers</b></a>
+                        <a href=""><b>For Agents</b> </a>
+                        <a href=""><b>For Tenants</b></a>
+                        <a href=""><b>For Owners</b></a>
+                    </div>
+                </li>
+                <li class="dropdown">Resources <button class="dropbtn"><i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                    <div class="dropdown-content" id="dp7">
+                        <a href="">Tools</a>
+                        <a href="">Solutions</a>
+                        <a href="">Credit Score</a>
+                        <a href="">Guides</a>
+                        <a href="">Glossary</a>
+                    </div>
+                </li>
+                <a href="https://www.squareyards.com/data-intelligence"><li id="data"> <span style="background-color: aqua; border-radius: 5px; padding: 2px; font-size:14px ;">Data</span> Intelligence</li></a>
+            </ul>
+           
+        </div>
+        <div class="move">
+            <ul>
+                <a href="Contact.html"><li style="border: 2px solid rgb(88,191,147); padding: 2% ; border-radius: 5px; margin: 5%; margin-left: 23%;">sell or Rent Property</li></a>
+                <li style="border: 2px solid black; padding: 2% ; border-radius: 5px; background-color: rgb(68,68,68);"><a href="login.html" style="text-decoration: none; color: white;">Login</a></li>
+                <li style="font-size: 20px;margin: 10px;"><i class="fa fa-heart" aria-hidden="true" id="heart" ></i></li>
+                
+            </ul>
+        </div>
+            
+        
+    </div>
+
+    <div class="title"><b style="font-size: 35px;">Real Estate Made Real Easy</b></div>
+
+    <div class="middle">
+        <ul>
+            <a href="index.html"><li><i class="fa fa-home" aria-hidden="true"></i> Home</li></a>
+            <a href="#"><li><i class="fa fa-wpforms" aria-hidden="true"></i> Rent</li></a>
+            <a href="#"><li> <i class="fa fa-window-restore" aria-hidden="true"></i> Land</li></a>
+            <a href="#"><li><i class="fa fa-users" aria-hidden="true"></i> Agents</li></a>
+            <a href="#"><li><i class="fa fa-spinner" aria-hidden="true"></i> New Project</li></a>
+            <a href="#"><li><i class="fa fa-th-list" aria-hidden="true"></i> More Services</li></a>
+        </ul>
+    </div>
+
+    <div class="backside" style="background-image: url(black.jpeg);">
+        <div class="upper">
+            <form action="#" class="Searchbar"><input type="text" placeholder="Search by 'City'" style="width: 900px; height: 40px " ></form>
+        </div>
+
+        <div class="find">
+            <button style="font-size: 20px; padding: 8px; width: 140px; background-color: aqua;" ><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+        </div>
+       
+    </div>
+    <div class="space">
+
+    </div>
+    </div>
+    <div class="card">
+
+        <center><h2>Insights & Tools</h2></center>
+
+        
+            <div class="divi">
+                <span class="card1">
+                    
+                </span>
+                <span class="card2">
+                    
+                </span>
+                <span class="card3">
+                    
+                </span>
+                <span class="card4">
+                    
+                </span>
+                <span class="card5">
+                    
+                </span>
+            </div>
+
+            <div class="down1">
+                <a href="https://www.squareyards.com/data-intelligence" ><center><p id="explore1">Explore Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </p></center></a>
+                <p id="t1"><b>Property Rates & Price Trends </b></p><p style="color:rgb(102,102,102) ;  margin-left: 8px;">Market rates, data analytics & registered transactions of top project & localities</p>
+            </div>
+            <div class="down2">
+                <a href="https://www.squareyards.com/heatmap" ><center><p id="explore2">Explore Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </p></center></a>
+                <p id="t2"><b>Property Rates Heatmap </b></p><p style="color:rgb(102,102,102) ;  margin-left: 8px;">An Interactive Map to help you understand a City’s Real Estate</p>
+            </div>
+            <div class="down3">
+                <a href="https://www.squareyards.com/reviews/delhi" ><center><p id="explore3">Explore Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </p></center></a>
+                <p id="t3"><b>Real Estate Guides </b></p><p style="color:rgb(102,102,102) ;  margin-left: 8px;">Proven Strategies, Insider Tips, and Hidden Procedures for Buyers, Sellers, and Tenants.</p>
+            </div>
+            <div class="down4">
+                <a href="https://www.squareyards.com/guide/buyer-guide" ><center><p id="explore4">Explore Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </p></center></a>
+                <p id="t4"><b>Real Estate Q&A Forum </b></p><p style="color:rgb(102,102,102) ;  margin-left: 8px;">Connect with a community of real estate enthusiasts and get all answers to make informed decisions about buying, selling, and managing your home.</p>
+            </div>
+            <div class="down5">
+                <a href="https://www.squareyards.com/forum" ><center><p  id="explore5">Explore Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </p></center></a>
+                <p id="t5"><b>A smarter way to invest </b></p><p style="color:rgb(102,102,102) ;  margin-left: 8px;">Invest in fractional properties to enjoy benefits such as hassle-free maintenance, high rental income, and low investment cost.</p>
+            </div>
+        
+        
+    </div>
+    
+    <div class="needs">
+        <center><h1>Everything you Need at One Place</h1></center>
+        <br><br><br><br>
+
+        <div class="D1">
+
+            <span class="s1">
+                
+            </span>
+            <span class="s2">
+
+            </span>
+            <span class="s3">
+
+            </span>
+
+        </div>
+        <div class="d1">
+            <p><h4>Rent Agreement</h4></p><p style="color: rgb(141,141,141);">- Super Quick & Easy</p><p style="color: rgb(141,141,141);">- Stamped & E-Signed</p><p style="color: rgb(141,141,141);">- Delivered Directly in Mail</p>
+            <a href="https://www.squareyards.com/rent-agreement"><button class="button">Create Now</button></a>
+        </div>
+
+        <div class="d2">
+            <p><h4>Interiors & Furnishing</h4></p><p style="color: rgb(141,141,141);">- Low Price Guaranteed
+            </p><p style="color: rgb(141,141,141);">- 10-Year Warranty </p><p style="color: rgb(141,141,141);">- Delivery Assurance</p>
+            <a href="https://www.interiorcompany.com/"><button class="button">Book Consultation</button></a>
+        </div>
+        
+        <div class="m1" style="margin-left: 265px; margin-top: -128px;">
+            <img src="rent.png" alt="">
+        </div>
+        <div class="m2" style="margin-left: 760px; margin-top: -171px; width: 5%;">
+            <img src="bed.png" alt="">
+        </div>
+        <div class="m3" style="margin-left: 1269px; margin-top: -159px; width: 5%;">
+            <img src="loan.png" alt="">
+        </div>
+        <div class="d3">
+            <p><h4>Home Loan</h4></p><p style="color: rgb(141,141,141);">- Attractive Interest Rates
+            </p><p style="color: rgb(141,141,141);">- Greater Loan Eligibility </p><p style="color: rgb(141,141,141);">- Loan Offers From Banks</p>
+            <a href="https://www.urbanmoney.com/loans/home-loan"><button class="button">Apply Now</button></a>
+        </div>
+
+        <div class="moment" style="margin-top: 140px;">
+            <marquee behavior="" direction=""><h2>***Find Your Dream Property in Your Preferred City***</h2></marquee>
+        </div>
+
+    </div>
+
+   
+
+    <div class="about">
+        
+        <hr>
+        <div class="main" style="height: 200px; width: 580px; margin: 30px;">
+
+            <h5>ABOUT US :</h5>
+
+            Square Yards is India's largest Integrated real estate marketplace, with category leadership presence 
+            across multiple touchpoints of consumer home ownership journey. With Urbanisation and rising disposable 
+            incomes as the core theme, Square Yards, with 7mn+ monthly traffic and ~USD 3bn+ GTV, is the largest and
+             asset light proxy play to the growing residential demand story of India. One of the few Indian start ups
+              to taste global success with presence in 100+ cities across 9 countries, Square Yards is at the forefront
+               of tech adoption in the sector, with multiple patents across VR/AI domains.</div>
+
+        <div style="padding-left: 700px; margin-top: -240px; ">
+            <h5>CONNECT WITH US :</h5>
+        <p>Write to us at</p>
+        <p><a href="#">connect@squareyards.com</a></p>
+        <p>
+            <b>Existing Clients :</b></p>
+            <p><a href="#">customercare@squareyards.com</a></p>
+        <p>
+            <b>Call us on</b>, toll free number : 1800 208 3344 </p>
+    
+
+        </div>
+        <div class="touch" style=" height: 100px; width: 360px; margin-left: 1100px; margin-top: -110px;">
+            <h5>EXPERIENCE SQUAREYARDS APP ON MOBILE</h5>
+            <a href="https://play.google.com/store/apps/details?id=com.sq.yrd.squareyards" target="_blank"><img src="playstore2.png" alt=""></a>
+            <a href="https://apps.apple.com/us/app/square-yards/id1093755061" target="_blank"><img src="appstore2.png" alt=""></a>
+        </div>
+        
+        <hr>
+
+       <div style="margin: 30px;">
+        <h5>OUR PRESENCE : </h5>
+        <h5>Corporate Office:</h5>
+        <p>Good Earth Business Bay, 9th Floor, Sector 58, Gurgaon -122011</p>
+       </div>
+       <p style="color: rgb(72,73,75); margin-left: 540px; margin-top: -23px;">© 2023 www.squareyards.com. All rights reserved.</p>
+       
+        
+    </div>
+    
+    
+</body>
+</html>
